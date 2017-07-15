@@ -1,0 +1,53 @@
+<div class="ibox-content">
+                                            <div class="feed-activity-list">
+                                                <h4>Participating Teams</h4>
+                                                <?php
+                                                if (is_array($teams)) {
+                                                    foreach ($teams as $team) {
+                                                        if ($team['team_id'] != 0) {
+                                                            $team_avatar = $team['team_avatar'];
+                                                            $team_folder = $team['team_folder'];
+                                                            $team_logo   = $team_folder.'/avatar/'.$team_avatar;
+                                                            ?>
+                                                            <div class="feed-element">
+                                                                <img alt="image" class="img-circle pull-left" src="<?php echo $this->basePath('teamspics/'.$team_logo); ?>">
+                                                                <div class="media-body ">
+                                                                    <strong><?php echo $team['name']; ?></strong>
+                                                                </div>
+                                                            </div>
+                                                            <?php
+                                                        }
+                                                    }
+                                                }
+                                                ?>
+                                            </div>
+                                        </div>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										<?php
+                                                if (is_array($teams)) {
+                                                    foreach ($teams as $team) {
+                                                        if ($team['team_id'] != 0) {
+                                                            $team_avatar = $team['team_avatar'];
+                                                            $team_folder = $team['team_folder'];
+                                                            $team_logo   = $team_folder.'/avatar/'.$team_avatar;
+                                                            ?>
+                                                            <div class="feed-element">
+                                                                <img alt="image" class="img-circle pull-left" src="<?php echo $this->basePath('teamspics/'.$team_logo); ?>">
+                                                                <div class="media-body ">
+                                                                    <strong><?php echo $team['name']; ?></strong>
+                                                                </div>
+                                                            </div>
+                                                            <?php
+                                                        }
+                                                    }
+                                                }
+                                                ?>
